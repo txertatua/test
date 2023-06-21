@@ -1,0 +1,18 @@
+Source: fdupes
+Section: utils
+Priority: optional
+Maintainer: Sandro Tosi <morph@debian.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/adrianlopezroche/fdupes
+Vcs-Git: https://alioth.debian.org/anonscm/git/users/morph/fdupes.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=users/morph/fdupes.git
+
+Package: fdupes
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Multi-Arch: foreign
+Description: identifies duplicate files within given directories
+ FDupes uses md5sums and then a byte by byte comparison to find
+ duplicate files within a set of directories. It has several useful
+ options including recursion.
